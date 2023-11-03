@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.northeastern.cs5500project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -10,19 +17,99 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CS5500Proj_Team10"
+        android:theme="@style/Theme.Team31Project"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CS5500Proj_Team10">
+            android:name="edu.northeastern.cs5500project.final_share"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_share_forum"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_profile"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_chat"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_edit_profile"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_front_page"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_sport"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_post"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_contact"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_register"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.final_login"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.ChatAndNotification.Chat"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.Contact.Contact"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.User_Auth.Registration"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.User_Auth.Login"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.About"
+            android:exported="false" />
+        <activity
+            android:name="edu.northeastern.cs5500project.weather"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="WEATHER" />
+        <activity
+            android:name="edu.northeastern.cs5500project.TrainingRecommendation"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="TrainingRecommendation" />
+        <activity
+            android:name="edu.northeastern.cs5500project.TrainingRecommendationDisplay"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="TrainingRecommendationDisplay" />
+        <activity
+            android:name="edu.northeastern.cs5500project.LocationSensor"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="LocationSensor" />
+        <activity
+            android:name="edu.northeastern.cs5500project.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="edu.northeastern.cs5500project.ChatAndNotification.FCMservice"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
