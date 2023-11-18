@@ -47,7 +47,7 @@ public class final_login extends AppCompatActivity {
         backToProfile(currentUser);
     }
 
-    private  Boolean validateForm(String email, String password) {
+    Boolean validateForm(String email, String password) {
         Pattern pattern = Pattern.compile("([a-z0-9]+(\\.?[a-z0-9])*)+@(([a-z]+)\\.([a-z]+))+");
         if(email !=null && password!= null) {
             if(!email.isEmpty()&& !password.isEmpty()) {
