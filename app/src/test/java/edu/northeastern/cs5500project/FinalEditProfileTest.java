@@ -1,6 +1,10 @@
+package edu.northeastern.cs5500project;
+
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+import edu.northeastern.cs5500project.final_edit_profile;
 
 public class FinalEditProfileTest {
 
