@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFC107"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/muscle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muscles I want to train"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/muscle_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/muscle_title"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chest" />
+        <RadioButton android:id="@+id/bicep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bicep" />
+        <RadioButton android:id="@+id/leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="leg" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time I want to spend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muscle_radio_group" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/time_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/time_title"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/time_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 minutes" />
+        <RadioButton android:id="@+id/time_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 minutes" />
+        <RadioButton android:id="@+id/time_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 minutes" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/equipment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipment Requirement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_radio_group" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/equipment_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_title"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/equipment_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+        <RadioButton android:id="@+id/equipment_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_radio_group" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
