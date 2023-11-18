@@ -1,4 +1,4 @@
-package edu.northeastern.cs5500proj_team10;
+package edu.northeastern.cs5500project;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
