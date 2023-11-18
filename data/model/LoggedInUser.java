@@ -1,5 +1,4 @@
-package edu.northeastern.cs5500project.data.model;
-
+package edu.northeastern.cs5500proj_team10;
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository
  */

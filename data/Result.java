@@ -1,5 +1,4 @@
-package edu.northeastern.cs5500project.data;
-
+package edu.northeastern.cs5500proj_team10;
 /**
  * A generic class that holds a result success w/ data or an error exception.
  */

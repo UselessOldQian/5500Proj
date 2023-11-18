@@ -1,5 +1,4 @@
-package edu.northeastern.cs5500project.data;
-
+package edu.northeastern.cs5500proj_team10;
 import edu.northeastern.cs5500project.data.model.LoggedInUser;
 
 /**
