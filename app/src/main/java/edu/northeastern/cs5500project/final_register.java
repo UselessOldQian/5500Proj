@@ -54,7 +54,7 @@ public class final_register extends AppCompatActivity {
         weight = findViewById(R.id.final_regis_weight_et);
     }
 
-    private Boolean validateForm (String emails, String passwords, String firstNames, String lastNames, String userNames, String phoneNumbers, String weights, String heights) {
+    public Boolean validateForm (String emails, String passwords, String firstNames, String lastNames, String userNames, String phoneNumbers, String weights, String heights) {
         Boolean flag = true;
         Pattern pattern = Pattern.compile("([a-z0-9]+(\\.?[a-z0-9])*)+@(([a-z]+)\\.([a-z]+))+");
         Matcher matcher = pattern.matcher(emails);
