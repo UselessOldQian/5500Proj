@@ -10,7 +10,7 @@
         android:id="@+id/textView_teamNo."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/team31"
+        android:text="team11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/members_zhangjin_pan_yixing_shen_haoran_zhang_xuanqi_he"
+        android:text="Zhangjin Pan, Yixing Shen, Jiayang Liu, Xingjian Qian"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_teamNo." />
