@@ -22,7 +22,7 @@ public class TrainingData {
         if (selectedEquipment != null &&
             selectedEquipment.equals("Yes") &&
             !equipment.equals("none")) {
-            return false;
+            return true;
         }
         return true;
     }
