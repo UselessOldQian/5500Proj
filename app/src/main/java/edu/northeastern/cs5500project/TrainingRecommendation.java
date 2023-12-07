@@ -79,6 +79,5 @@ public class TrainingRecommendation extends AppCompatActivity {
             intent.putExtra("equipmentSelected",equipmentSelected);
             startActivity(intent);
         }
-
     }
 }

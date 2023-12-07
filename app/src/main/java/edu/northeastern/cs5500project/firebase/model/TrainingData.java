@@ -1,7 +1,5 @@
 package edu.northeastern.cs5500project.firebase.model;
 
-
-
 public class TrainingData {
     public String equipment;
     public String instruction;
@@ -9,6 +7,8 @@ public class TrainingData {
     public String time;
     public String training_name;
 
+    public TrainingData() {
+    }
 
     public boolean matched(String selectedMuscle,
                            String selectedTime,
@@ -36,4 +36,5 @@ public class TrainingData {
                 "\ntraining_name='" + training_name +
                 "\n}";
     }
+
 }
