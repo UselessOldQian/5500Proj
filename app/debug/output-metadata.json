@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "edu.northeastern.team31project",
+  "applicationId": "edu.northeastern.cs5500project",
   "variantName": "debug",
   "elements": [
     {
